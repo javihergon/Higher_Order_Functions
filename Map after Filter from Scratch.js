@@ -5,7 +5,7 @@
     {name: {first: "Lem", middle: "E.", last: "Tweakit"}, age: 45},
     {name: {first: "Louis", last: "Reasoner"}, age: 21}
   ];
-//   ```
+
 //   1. Add the object representing yourself to this array of people (if your
 //       `name` key does not have the same "shape" as the ones above, make sure you
 //       change it to look like these).
