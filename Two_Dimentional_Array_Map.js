@@ -43,3 +43,26 @@ var maximus = function (array) {
 };
 
 map(sampleInput, maximus); //==> [ 3, 100, -2 ]
+
+//Return an Array of Array with their values doubled
+
+function double (num) {
+  return num * 2;
+}
+var doubled = function(array){
+ var newArray = [];
+ each(array, function(innerArray) {
+  // var doubleNum = [];
+  // var doubleNum = map(innerArray, function(value) {
+  //     return double(value);
+  // });
+    // for(var i = 0; i < innerArray.length; i++) {
+    //   doubleNum.push(double(innerArray[i]));
+    // }
+  newArray.push(map(innerArray, function(value) {
+      return double(value);}));
+ }); 
+ return newArray;
+};
+
+doubled(sampleInput); //=> [ [ 2, 6, 4 ], [ 8, 46, 200 ], [ -14, -12, -6, -4 ] ]
